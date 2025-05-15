@@ -1,0 +1,17 @@
+Strategy Pattern
+The Strategy Pattern is a behavioral design pattern that enables selecting an algorithm's behavior at runtime. It defines a family of algorithms, encapsulates each one, and makes them interchangeable. This pattern lets the algorithm vary independently from clients that use it.
+It is particularly useful when you have multiple algorithms for a specific task and want to choose one at runtime based on the context or user input.
+Advantages:
+1. **Flexibility**: You can change the algorithm used by the context at runtime.
+2. **Encapsulation**: Each algorithm is encapsulated in its own class, making it easier to manage and maintain.
+3. **Open/Closed Principle**: You can add new algorithms without modifying existing code.
+4. **Single Responsibility Principle**: Each algorithm has its own class, adhering to the single responsibility principle.
+5. **Testability**: Each strategy can be tested independently.
+6. **Reusability**: Strategies can be reused across different contexts.
+7. **Separation of Concerns**: The context is separated from the algorithms, making the code cleaner and easier to understand.
+Disadvantages:
+1. **Increased Complexity**: The number of classes can increase, making the system more complex.
+2. **Communication Overhead**: The context must be aware of the strategy interface, which can lead to tight coupling.
+3. **Difficulty in Choosing the Right Strategy**: If there are many strategies, it can be challenging to choose the right one at runtime.
+4. **Overhead of Strategy Creation**: Creating a new strategy object can add overhead, especially if the strategy is lightweight.
+5. **Potential for Code Duplication**: If multiple strategies share common code, it can lead to code duplication unless properly managed.

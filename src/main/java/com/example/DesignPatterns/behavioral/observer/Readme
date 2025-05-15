@@ -1,0 +1,17 @@
+Observer Pattern
+// The Observer Pattern is a behavioral design pattern that defines a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically. It is commonly used in event handling systems, where multiple components need to be notified of changes in another component's state.
+// It is particularly useful in scenarios where you have a subject (the object being observed) and multiple observers (the objects that need to be notified of changes).
+// Advantages:
+// 1. **Loose Coupling**: The subject and observers are loosely coupled, allowing for flexibility in the system.
+// 2. **Dynamic Relationships**: Observers can be added or removed at runtime, allowing for dynamic relationships.
+// 3. **Reusability**: Observers can be reused across different subjects.
+// 4. **Scalability**: The pattern can handle a large number of observers without significant performance degradation.
+// 5. **Separation of Concerns**: The subject and observers are separated, making the code cleaner and easier to understand.
+// 6. **Event-Driven Architecture**: It supports an event-driven architecture, making it suitable for GUI applications and real-time systems.
+// 7. **Notification Mechanism**: It provides a built-in notification mechanism, reducing the need for manual updates.
+// Disadvantages:
+// 1. **Memory Leaks**: If observers are not properly removed, it can lead to memory leaks.
+// 2. **Complexity**: The system can become complex with many observers and subjects.
+// 3. **Performance Overhead**: Notifying all observers can introduce performance overhead, especially if there are many observers.
+// 4. **Order of Notification**: The order in which observers are notified is not guaranteed, which can lead to inconsistent states.
+// 5. **Debugging Difficulty**: Debugging can be challenging due to the indirect communication between subjects and observers.
