@@ -3,7 +3,7 @@ package com.example.DesignPatterns.behavioral.observer;
 import java.util.ArrayList;
 import java.util.List;
 
-public class WeatherStation {
+public class WeatherStation implements Subject{
 
     private List<Observer> observers = new ArrayList<>();
     private String weather;
